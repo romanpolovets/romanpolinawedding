@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Roma & Polina</title>
+	<link href='./static/img/icons8-wedding-96.png' rel="icon" type="image/png">
+	<link href="./styles.css" rel="stylesheet" type="text/css">
+	<link href="./styles-media.css" rel="stylesheet" type="text/css">
+	<link href="./static/fonts/fonts.css" rel="stylesheet" type="text/css">
+	<link
+		rel="stylesheet"
+		href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+		integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+		crossorigin="anonymous"
+	/>
+</head>
+
+<body>
+
+<div class='main-wrapper'>
+	<header class='header'>
+		<div class='header-container'>
+			<div class='header-title' onclick='goTop()'>Wedding</div>
+			<ul class='menu'>
+				<li class='menu-item'><a href='#invitation' class='link'>Инфо</a></li>
+				<li class='menu-item'><a href='#slider' class='link'>Фото</a></li>
+				<li class='menu-item'><a href='#video' class='link'>Видео</a></li>
+				<li class='menu-item'><a href='#big-game' class='link'>Суперигра</a></li>
+				<li class='menu-item'><a href='#address' class='link'>Место</a></li>
+			</ul>
+
+			<div class="burger-menu-toggle-btn">
+				<span></span>
+				<span></span>
+				<span></span>
+			</div>
+
+			<ul class="burger-menu">
+				<li class='menu-item'><a href='#invitation' class='link burger'>Инфо</a></li>
+				<li class='menu-item'><a href='#slider' class='link burger'>Фото</a></li>
+				<li class='menu-item'><a href='#video' class='link burger'>Видео</a></li>
+				<li class='menu-item'><a href='#big-game' class='link burger'>Суперигра</a></li>
+				<li class='menu-item'><a href='#address' class='link burger'>Место</a></li>
+			</ul>
+		</div>
+	</header>
+
+	<div id='main-photo' class='content-wrapper'>
+		<img src='static/img/main_photo.png' alt='wedding-photo'>
+	</div>
+
+	<div id='invitation' class='content-wrapper'>
+		<div class='invitation-title'>Дорогие гости!</div>
+		<div class='invitation-text'>
+			<br>
+			С большим удовольствием мы хотим пригласить вас на нашу свадьбу, которая состоится 01 июля 2023 года в 16:00 
+			в ресторане «Catch» по адресу ул. Мясникова 25.
+			<br>
+			<br>
+			Этот день для нас очень важен, и мы хотим поделиться им с вами.
+			<br>
+			<br>
+			Мы обещаем незабываемый вечер, полный радости и веселья,
+			<br>
+			а также многое другое (см. Приложение 1). Будем рады видеть каждого из вас.
+			<br>
+			<br>
+			С любовью,
+			<br>
+			Рома и Полина
+			<div class='invitation-note-text'>(Если не помните, кто это, см. материалы ниже)</div>
+		</div>
+				<a href='#slider' class='invitation-btn'>Далее</a>
+	</div>
+
+	<div id='slider' class='content-wrapper'>
+		<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+			<ol class="carousel-indicators">
+				<li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+				<li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+				<li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+				<li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+				<li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+			</ol>
+			<div class="carousel-inner">
+				<div class="carousel-item active">
+					<img class="d-block w-100" src="./static/img/1.jpg" alt="First slide">
+				</div>
+
+				<div class="carousel-item">
+					<img class="d-block w-100" src="./static/img/2.jpg" alt="Second slide">
+				</div>
+
+				<div class="carousel-item">
+					<img class="d-block w-100" src="./static/img/3.jpg" alt="Third slide">
+				</div>
+
+				<div class="carousel-item">
+					<img class="d-block w-100" src="./static/img/4.jpg" alt="Forth slide">
+				</div>
+
+				<div class="carousel-item">
+					<img class="d-block w-100" src="./static/img/5.jpg" alt="Fifth slide">
+				</div>
+			</div>
+			<a
+				class="carousel-control-prev"
+				href="#carouselExampleIndicators"
+				role="button"
+				data-slide="prev"
+			>
+				<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+				<span class="sr-only">Previous</span>
+			</a>
+			<a
+				class="carousel-control-next"
+				href="#carouselExampleIndicators"
+				role="button"
+				data-slide="next"
+			>
+				<span class="carousel-control-next-icon" aria-hidden="true"></span>
+				<span class="sr-only">Next</span>
+			</a>
+		</div>
+	</div>
+
+	<div id='video' class='content-wrapper'>
+		<iframe 
+			width="100%" 
+			height="480" 
+			src="https://www.youtube.com/embed/arvX1g9-nA8" 
+			title="YouTube video player" 
+			frameborder="0" 
+			allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+			allowfullscreen
+			></iframe>
+	</div>
+
+	<div id='big-game' class='content-wrapper'>
+		<div class='big-game-container'>
+			<div class='invitation-title'>Суперигра</div>
+			<div class='invitation-text'>
+				<br>
+				Мы хотим, чтобы этот день запомнился не только нам, но и вам, поэтому мы подготовили
+				для
+				вас настоящий сюрприз – игру, правила которой будут объявлены внезапно.
+				<br>
+				<br>
+				Участие в Суперигре стоит всего 20 рублей. В игре участвуют все гости, которые желают
+				испытать свою удачу и получить главный приз. Мы уверены, что эта игра станет ярким и
+				запоминающимся моментом нашей свадьбы.
+				<br>
+				<br>
+				Мы ждем вас на нашем празднике и надеемся, что вы примете участие в этой
+				безумной
+				игре!
+			</div>
+		</div>
+	</div>
+
+	<div id='address' class='content-wrapper'>
+		<iframe
+			src="https://yandex.ru/map-widget/v1/?um=constructor%3A4dd23c861e30660ab586a47d7ebbd70b0405abd7e9aba49cc2b3296454c76604&amp;source=constructor"
+			width="100%"
+			height="70%"
+			frameborder="0"
+		></iframe>
+	</div>
+
+      <footer id='footer' class='footer text-center text-white-50'>
+        <p>
+        	Данный сайт не является публичной офертой.
+        	<br> 
+        	Если ваше соединение не защищено - ничего страшного.
+        	<br>
+        	<br>
+        	<span class="text-gray">Приложение 1</span>
+        	<br>
+        	Интерактивы, танцы, красивые официанты, подарки, вкусная еда, теплая водичка в умывальниках, слезы, крики,
+        	<br>
+        	что-то к чаю, сюрпризы, теплота и сухость в помещении, адекватный ведущий, неадекватный диджей.
+        	<br>
+        	Если вы дочитали до этого момента, запомните слово "трезвость" - оно является паролем,
+        	<br>
+        	и именно оно позволит вам получить лишний бокал алкоголя.
+        	<br>
+        	<br>
+        	Спасибо за непосильную помощь <a target='_blank' rel="noopener noreferrer" class="text-gray" href="https://www.instagram.com/kotsur.vlad/">Владу К.</a> (dev),
+	        <a target='_blank' rel="noopener noreferrer" class="text-gray" href="https://www.instagram.com/makota.ph/">Илье М.</a> (фото),
+	        <a target='_blank' rel="noopener noreferrer" class="text-gray" href="https://www.instagram.com/k.nstsia/">
+			<br>
+        	Насте Д.</a> (фото и прическа), <a target='_blank' rel="noopener noreferrer" class="text-gray" href="https://www.instagram.com/anamakota/">Ане М.</a> (нанятая актриса для видео).
+        	<br>
+        	<br>
+        	<br>
+        	<img src="./static/img/icon_inv.png">
+        	ROMA&POLINA Copyright © 2023 Wedding - All rights reserved || Designed By: Nobody
+        </p>
+      </footer>
+	</div>
+
+<script
+	src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+	integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+	crossorigin="anonymous"
+></script>
+<script
+	src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+	integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+	crossorigin="anonymous"
+></script>
+<script
+	src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+	integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+	crossorigin="anonymous"
+></script>
+<script src="script.js"></script>
+
+</body>
+</html>

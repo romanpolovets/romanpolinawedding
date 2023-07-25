@@ -1,0 +1,75 @@
+@media screen and (max-width: 920px) {
+  .header {
+    justify-content: space-between;
+  }
+
+  .header-container {
+    max-width: none;
+    padding: 24px;
+  }
+
+  .link {
+    font-weight: 500;
+    font-size: 18px;
+  }
+
+  .menu-item:hover .link {
+    color: #6c757d;
+  }
+
+  .menu-item:active .link {
+    color: white;
+  }
+
+  #invitation {
+    max-width: 510px;
+  }
+
+  #big-game {
+    padding: 48px;
+  }
+
+  .big-game-container {
+    max-width: 510px;
+  }
+
+  .invitation-text {
+    font-size: 18px;
+    line-height: 26px;
+  }
+
+  .invitation-btn {
+    padding: 12px;
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 690px) {
+  .menu {
+    display: none;
+  }
+
+  .burger-menu-toggle-btn {
+    display: flex;
+  }
+
+  .burger-menu {
+    display: initial;
+  }
+
+  .active-link {
+    color: white !important;
+    border-bottom: none;
+  }
+}
+
+@media screen and (max-width: 460px) {
+  .content-wrapper {
+    padding: 20px;
+  }
+
+  #big-game {
+    padding: 20px;
+  }
+}
+
